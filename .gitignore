@@ -1,0 +1,50 @@
+# =========================
+# C / C++ compiled binaries
+# =========================
+
+# Common executable names
+a.out
+*.out
+
+# Executables without extension (built by g++)
+# Matches Mach-O binaries
+*.o
+*.dSYM/
+
+# =========================
+# macOS specific
+# =========================
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# =========================
+# Build directories (any depth)
+# =========================
+build/
+Build/
+bin/
+Bin/
+dist/
+Dist/
+
+# =========================
+# Object / dependency files
+# =========================
+*.o
+*.obj
+*.lo
+*.la
+*.a
+*.so
+*.dylib
+*.dll
+*.d
+
+# =========================
+# CMake (if you ever use it)
+# =========================
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
