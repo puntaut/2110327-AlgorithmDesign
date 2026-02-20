@@ -10,11 +10,7 @@ int main() {
     deque<int> deq;
     vector<int> s(n+1);
     deq.push_back(0);
-    // cout << "size:" << deq.size() << "\n";
-    // for (auto x : deq) {
-    //     cout << x << " ";
-    // }
-    // cout << "\n";
+
     int mcs;
     for (int i = 1; i < n+1; i++) {
         int x;
@@ -29,12 +25,6 @@ int main() {
         } else {
             mcs = max(s[i]-s[deq.front()], mcs);
         }
-
-        // cout << "size:" << deq.size() << "\n";
-        // for (auto x : deq) {
-        //     cout << x << " ";
-        // }
-        // cout << "\n";
 
         while(!deq.empty() && s[i] <= s[deq.back()]) {
             deq.pop_back();
